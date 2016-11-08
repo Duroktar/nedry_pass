@@ -30,28 +30,28 @@ Example
 
 Either raise the custom exception yourself
 
-.. code-block:: python
+```python
+from nedry_pass import YouDidntSayTheMagicWord
 
-    from nedry_pass import YouDidntSayTheMagicWord
-
-    raise YouDidntSayTheMagicWord
+raise YouDidntSayTheMagicWord
+```
 
 or use the built in getpass override
 
-.. code-block:: python
+```python
+from nedry_pass import getpass
 
-    from nedry_pass import getpass
-
-    secret = 'fini.obj'
-    getpass(secret)
+secret = 'fini.obj'
+getpass(secret)
+```
 
 OR live out the original scene (slightly modified) from the comfort of your own home
 
-.. code-block:: python
+```python
+from nedry_pass import access_main_program
 
-    from nedry_pass import access_main_program
-    
-    access_main_program()
+access_main_program()
+```
 
 Disclaimer
 ----------
