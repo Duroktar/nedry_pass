@@ -27,7 +27,10 @@ import threading as _threading
 import platform as _platform
 import contextlib as _contextlib
 import itertools as _it
-import winsound as _winsound
+try:
+    import winsound as _winsound
+except ImportError:
+    _winsound = None
 try:
     # Python2
     import Tkinter as _tk
@@ -65,6 +68,7 @@ class YouDidntSayTheMagicWord(Exception):
     def _audio_spam():
         this_sys = _platform.system()
         audiofile = _join(_PATH, 'magic_word.wav')
+
         def run():
             if this_sys == "Windows":
                 flags = _winsound.SND_FILENAME | _winsound.SND_ASYNC | _winsound.SND_LOOP
@@ -73,15 +77,15 @@ class YouDidntSayTheMagicWord(Exception):
                     _sleep(0.1)
             elif this_sys == "Linux":
                 with ignore_stderr():
-                    while(True):
+                    while True:
                         _os.system("play -q " + audiofile)
-                        sleep(0.1)
+                        _sleep(0.1)
             else:
                 try:
                     with ignore_stderr():
-                        while(True):
+                        while True:
                             _os.system("afplay " + audiofile)
-                            sleep(0.1)
+                            _sleep(0.1)
                 except OSError:
                     pass
 
@@ -142,6 +146,7 @@ def _giffer(files):
     pictures = _it.cycle(_tk.PhotoImage(file=img_name) for img_name in files)
     # milliseconds
     delay = 150
+
     def animate():
         """ cycle through """
         img = next(pictures)
@@ -153,16 +158,16 @@ def _giffer(files):
 
 @_contextlib.contextmanager
 def ignore_stderr():
-    devnull = os.open(os.devnull, os.O_WRONLY)
-    old_stderr = os.dup(2)
-    sys.stderr.flush()
-    os.dup2(devnull, 2)
-    os.close(devnull)
+    devnull = _os.open(_os.devnull, _os.O_WRONLY)
+    old_stderr = _os.dup(2)
+    _sys.stderr.flush()
+    _os.dup2(devnull, 2)
+    _os.close(devnull)
     try:
         yield
     finally:
-        os.dup2(old_stderr, 2)
-        os.close(old_stderr)
+        _os.dup2(old_stderr, 2)
+        _os.close(old_stderr)
 
 
 if __name__ == '__main__':
