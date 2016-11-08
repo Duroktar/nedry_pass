@@ -53,6 +53,12 @@ from nedry_pass import access_main_program
 access_main_program()
 ```
 
+Changes
+-------
+Version 0.0.5:
+ - Refactored a lot of code and added comments.
+ - Added wht_rbt.obj as runnable script like in the book.
+
 Disclaimer
 ----------
 This package is merely a form of fan art and in no way intends to infringe on any copyrights held by their respective
@@ -62,5 +68,5 @@ Credits
 -------
 Scott Doucet, 2016
 
-version number: 0.0.4
+version number: 0.0.5
 author: Scott Doucet
