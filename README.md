@@ -22,6 +22,7 @@ To install use pip:
 Or clone the repo:
 
     $ git clone https://github.com/Duroktar/nedry_pass.git
+    
     $ python setup.py install
 
 Example
@@ -29,11 +30,15 @@ Example
 
 Either raise the custom exception yourself
 
+.. code-block:: python
+
     from nedry_pass import YouDidntSayTheMagicWord
 
     raise YouDidntSayTheMagicWord
 
 or use the built in getpass override
+
+.. code-block:: python
 
     from nedry_pass import getpass
 
@@ -42,8 +47,10 @@ or use the built in getpass override
 
 OR live out the original scene (slightly modified) from the comfort of your own home
 
-    from nedry_pass import access_main_program
+.. code-block:: python
 
+    from nedry_pass import access_main_program
+    
     access_main_program()
 
 Disclaimer
@@ -55,5 +62,5 @@ Credits
 -------
 Scott Doucet, 2016
 
-version number: 0.0.3
+version number: 0.0.4
 author: Scott Doucet
