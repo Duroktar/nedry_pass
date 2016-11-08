@@ -3,9 +3,6 @@ Nedry-Pass Password Protection
 
 ![logo](https://github.com/Duroktar/nedry_pass/blob/master/nedry_pass/front.JPG)
 
-version number: 0.0.1
-author: Scott Doucet
-
 Overview
 --------
 **A security package for those tough jobs!**
@@ -57,3 +54,6 @@ owners.
 Credits
 -------
 Scott Doucet, 2016
+
+version number: 0.0.1
+author: Scott Doucet
