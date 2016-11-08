@@ -1,16 +1,17 @@
 Nedry-Pass Password Protection
 ===============================
 
-![logo](./nedry_pass/Newman_01.gif)
+![logo](https://github.com/Duroktar/nedry_pass/blob/master/nedry_pass/front.JPG)
 
 version number: 0.0.1
 author: Scott Doucet
 
 Overview
 --------
+**A security package for those tough jobs!**
 
-A security package for those tough jobs. Protect your data like a boss with Nedry-Pass.
-Developed by a top Computer Scientist at a World Renown Mega-Resort; this sort of protection
+Protect your data like a boss with Nedry-Pass.
+Developed by a top Computer Scientist at a World Renown Mega-Resort. This sort of protection
 should come with a Warning label!
 
 Installation / Usage
