@@ -47,11 +47,7 @@ getpass(secret)
 
 OR live out the original scene (slightly modified) from the comfort of your own home
 
-```python
-from nedry_pass import access_main_program
-
-access_main_program()
-```
+    $ wht_rbt.obj
 
 Changes
 -------
