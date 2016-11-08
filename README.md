@@ -1,11 +1,11 @@
 Nedry-Pass Password Protection
 ===============================
+**A security package for those tough jobs!**
 
 ![logo](https://github.com/Duroktar/nedry_pass/blob/master/nedry_pass/front.JPG)
 
 Overview
 --------
-**A security package for those tough jobs!**
 
 Protect your data like a boss with Nedry-Pass.
 Developed by a top Computer Scientist at a World Renown Mega-Resort. This sort of protection
