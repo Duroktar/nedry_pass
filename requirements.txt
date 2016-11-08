@@ -1,3 +1,1 @@
-# Dev/Deployment
-coverage
-pypi-publisher
+
