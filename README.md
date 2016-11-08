@@ -55,5 +55,5 @@ Credits
 -------
 Scott Doucet, 2016
 
-version number: 0.0.2
+version number: 0.0.3
 author: Scott Doucet
