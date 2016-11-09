@@ -65,5 +65,5 @@ Credits
 Scott Doucet, 2016
 
 version number: 0.0.5
-author: Scott Doucet
-[![downloads](https://img.shields.io/pypi/dm/nedry_pass.svg)](https://pypi.python.org/pypi/nedry_pass)
+
+[![downloads](https://img.shields.io/pypi/dm/nedry-pass.svg)](https://pypi.python.org/pypi/nedry-pass)
