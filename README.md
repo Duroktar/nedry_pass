@@ -3,7 +3,6 @@ Nedry-Pass Password Protection
 **A security package for those tough jobs!**
 
 ![logo](https://github.com/Duroktar/nedry_pass/blob/master/nedry_pass/front.JPG)
-
 Overview
 --------
 
@@ -64,6 +63,6 @@ Credits
 -------
 Scott Doucet, 2016
 
-version number: 0.0.5
+version number: ![PyPI](https://img.shields.io/pypi/v/nedry-pass.svg)
 
-[![downloads](https://img.shields.io/pypi/dm/nedry-pass.svg)](https://pypi.python.org/pypi/nedry-pass)
+[![PyPI downloads](https://img.shields.io/pypi/dm/nedry-pass.svg)](https://pypi.python.org/pypi/nedry-pass)
