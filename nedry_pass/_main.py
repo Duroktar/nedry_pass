@@ -177,7 +177,9 @@ def access_main_program():
           "Ready..."
     while count < tries:
         echo = raw_input('> ').split()
-        if __pass in echo:
+        if echo is None:
+            echo = ""
+        if __pass == echo:
             break
         count += 1
         if count != tries:
