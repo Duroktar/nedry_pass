@@ -149,7 +149,7 @@ def getpass(to_match, prompt=None, tries=3):
         tries = 0
     count = 0
     while count < tries:
-        try_pass = _gp(prompt=p)
+        try_pass = _gp(prompt=p) or ""
         if not try_pass == to_match:
             count += 1
             if count != tries:
@@ -176,16 +176,16 @@ def access_main_program():
           "Version 4.0.5, Alpha E \n" \
           "Ready..."
     while count < tries:
-        echo = raw_input('> ').split()
+        echo = raw_input('> ').split() or ""
         if echo is None:
             echo = ""
         if __pass == echo:
             break
         count += 1
         if count != tries:
-            print "{}: PERMISSION DENIED.".format(echo[0])
+            print "ACCESS: PERMISSION DENIED."
         else:
-            print "{}: PERMISSION DENIED....AND.....".format(echo[0])
+            print "ACCESS: PERMISSION DENIED....AND....."
             _sleep(0.8)
             raise YouDidntSayTheMagicWord
 
