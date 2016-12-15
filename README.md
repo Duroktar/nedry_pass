@@ -50,6 +50,10 @@ OR live out the original scene (slightly modified) from the comfort of your own 
 
 Changes
 -------
+Version 0.0.6:
+ - Fixed IndexError on no input.
+
+
 Version 0.0.5:
  - Refactored a lot of code and added comments.
  - Added wht_rbt.obj as runnable script like in the book.
